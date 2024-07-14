@@ -1,0 +1,29 @@
+.page {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  width: 50%;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+ul li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+li:hover {
+  font-weight: bold;
+}
+
+li.done {
+  text-decoration: line-through;
+}
+.liParent {
+  border: 1px solid #eee;
+}
+
+.liParent button {
+  border: none;
+  border-radius: 0;
+}
