@@ -35,8 +35,6 @@ const Page = () => {
     localStorage.setItem("toDos", JSON.stringify(toDos));
   }, [toDos]);
 
-  console.log(toDos.length);
-
   return (
     <div className="page text-center border rounded shadow bg-white">
       <Container fluid>
@@ -72,7 +70,7 @@ const Page = () => {
                   className="ml-2 w-100"
                   onClick={() => handleDelete(index)}
                 >
-                  🗙
+                  X
                 </Button>
               </div>
             ))
