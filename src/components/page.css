@@ -1,34 +1,54 @@
-.page {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 50px;
-  width: 50%;
-  overflow: hidden;
-  overflow-wrap: break-word;
+.todo-app {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-ul li {
-  cursor: pointer;
-  transition: 0.3s;
-}
-li:hover {
-  font-weight: bold;
+.app-header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-li.done {
+.completed-task {
+  background-color: #f8f9fa;
   text-decoration: line-through;
 }
-.liParent {
-  border: 1px solid #eee;
+
+.task-text {
+  font-size: 1.1rem;
 }
 
-.liParent button {
-  border: none;
-  border-radius: 0;
+.empty-state {
+  padding: 2rem;
 }
-@media (max-width: 767px) {
-  .page {
-    width: 90%;
+
+.list-group-item {
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+.stats .badge {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+  .todo-app {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .stats .badge {
+    width: 100%;
   }
 }
